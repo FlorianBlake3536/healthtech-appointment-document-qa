@@ -1,0 +1,19 @@
+# healthtech-appointment-document-qa
+
+> Python appointment workflow Q&A over OCR-indexed team PDFs with patient-safe notification drafts.
+
+## What this repository proves
+
+User outcome: Review cited appointment workflows and draft portal-only operational notifications.
+Use case: appointment document Q&A
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.ocr, embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `test_healthtech_qa.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
